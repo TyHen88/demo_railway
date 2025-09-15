@@ -1,3 +1,23 @@
 spring:
+  profiles:
+    active: prod
   application:
     name: demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/wecomerce
+    driver-class-name: org.postgresql.Driver
+    username: mac_pg
+    password: 12345678
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+    swagger-ui-config-url: /v3/api-docs/swagger-config
+   
