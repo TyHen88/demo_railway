@@ -2,10 +2,10 @@ spring:
   application:
     name: demo
   datasource:
-    url: ${DATABASE_URL}
+    url: ${{DATABASE_URL}}
     driver-class-name: org.postgresql.Driver
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    username: ${{DB_USERNAME}}
+    password: ${{DB_PASSWORD}}
   jpa:
     hibernate:
       ddl-auto: update
